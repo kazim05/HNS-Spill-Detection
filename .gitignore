@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Model weights / frozen graphs (large, not source)
+checkpoint/*
+!checkpoint/.gitkeep
+*.ckpt
+*.ckpt-*
+*.pb
+*.weights
+
+# Training artefacts
+data/log/*
+!data/log/.gitkeep
+data/train_loss.csv
+data/test_loss.csv
+
+# Inference / evaluation output
+data/detection/*
+!data/detection/.gitkeep
+result/
+results/
+tmp_files/
+mAP/ground-truth/*
+!mAP/ground-truth/.gitkeep
+mAP/predicted/*
+!mAP/predicted/.gitkeep
+mAP/images/*
+!mAP/images/.gitkeep
+
+# Dataset annotation lists (paths are machine-specific)
+data/dataset/*.txt
+
+# OS
+.DS_Store
+Thumbs.db
